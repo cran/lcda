@@ -31,7 +31,7 @@ lcda(x, ...)
 \item{na.rm}{Logical, for how \code{lcda} handles cases with missing values on the manifest variables. If \code{TRUE}, those cases are removed (listwise deleted) before estimating the model. If \code{FALSE}, cases with missing values are retained. Cases with missing covariates are always removed. The default is \code{TRUE}.}
 \item{\dots}{Further arguments to be passed to \code{lcda}.}
 }
-\details{The \code{lcda}-function performs a Latent Class Discriminant Analysis (LCDA).  A Latent Class Modell will be estimated for each class by the \code{poLCA}-function (see \code{\link[pcg:poLCA]{poLCA}}). 
+\details{The \code{lcda}-function performs a Latent Class Discriminant Analysis (LCDA).  A Latent Class Modell will be estimated for each class by the \code{poLCA}-function (see \code{\link[poLCA]{poLCA}}).
 The class conditional model is given by
 \deqn{f_k(x) = \sum_{m=1}^{M_k} w_{mk} \prod_{d=1}^D\prod_{r=1}^{R_d} \theta_{mkdr}^{x_{kdr}},}{f_k(x) = Sum_{m=1,..,M_k} w_{mk} Prod_{d=1,...,D} Prod_{r=1,...,R_d} theta_{mkdr}^{x_{kdr}},}
 where \eqn{k}{k} is the class index, \eqn{m}{m} is the latent subclass index, \eqn{d}{d} is the variable index and \eqn{r}{r} is the observation index. The variable \eqn{x_{kdr}}{x_{kdr}} is \eqn{1}{1} if the variable \eqn{d}{d} of this observation is \eqn{r}{r} and in class \eqn{k}{k}. The parameter \eqn{w_{mk}}{w_{mk}} is the class conditional mixture weight and \eqn{\theta_{mkdr}}{\theta_{mkdr}} is the probability for outcome \eqn{r}{r} of variable \eqn{d}{d} in subclass \eqn{m}{m} of class \eqn{k}{k}.
@@ -54,9 +54,9 @@ A list of class \code{lcda} containing the following components:
 \item{Gsq}{The likelihood ratio/deviance statistic for each class conditional model.}
 \item{Chisq}{The Pearson Chi-square goodness of fit statistic for fitted vs. observed multiway tables for each class conditional model.}
 }
-\note{If the number of latent classes per class is unknown a model selection must be accomplished to determine the value of \code{m}. For this goal there are some model selection criteria implemented. The AIC, BIC, likelihood ratio statistic and the Chi-square goodness of fit statistic are taken from the poLCA-function (see \code{\link[pkg:poLCA]{poLCA}}). For each class these criteria can be regarded separately and for each class the number of latent classes can be determined.}
+\note{If the number of latent classes per class is unknown a model selection must be accomplished to determine the value of \code{m}. For this goal there are some model selection criteria implemented. The AIC, BIC, likelihood ratio statistic and the Chi-square goodness of fit statistic are taken from the poLCA-function (see \code{\link[poLCA]{poLCA}}). For each class these criteria can be regarded separately and for each class the number of latent classes can be determined.}
 \author{ Michael B\"ucker}
-\seealso{ \code{\link{predict.lcda}}, \code{\link{cclcda}}, \code{\link{predict.cclcda}}, \code{\link{cclcda2}}, \code{\link{predict.cclcda2}}, \code{\link[pcg:poLCA]{poLCA}} }
+\seealso{ \code{\link{predict.lcda}}, \code{\link{cclcda}}, \code{\link{predict.cclcda}}, \code{\link{cclcda2}}, \code{\link{predict.cclcda2}}, \code{\link[poLCA]{poLCA}} }
 \examples{
 # response probabilites for class 1
 probs1 <- list()

@@ -22,7 +22,7 @@ the \code{cclcda}-function are computed. The classification of the new data is d
     For details of computation see \code{\link{cclcda}}.}
 }
 \author{ Michael B\"ucker}
-\seealso{ \code{\link{cclcda}}, \code{\link{lcda}}, \code{\link{predict.lcda}}, \code{\link{cclcda2}}, \code{\link{predict.cclcda2}}, \code{\link[pcg:poLCA]{poLCA}} }
+\seealso{ \code{\link{cclcda}}, \code{\link{lcda}}, \code{\link{predict.lcda}}, \code{\link{cclcda2}}, \code{\link{predict.cclcda2}}, \code{\link[poLCA]{poLCA}} }
 \examples{
 # response probabilites
 probs1 <- list()

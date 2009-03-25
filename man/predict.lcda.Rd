@@ -22,7 +22,7 @@ the \code{lcda}-function are computed. The classification of the new data is don
     For details of computation see \code{\link{lcda}}.}
 }
 \author{ Michael B\"ucker}
-\seealso{ \code{\link{lcda}}, \code{\link{cclcda}}, \code{\link{predict.cclcda}}, \code{\link{cclcda2}}, \code{\link{predict.cclcda2}}, \code{\link[pcg:poLCA]{poLCA}} }
+\seealso{ \code{\link{lcda}}, \code{\link{cclcda}}, \code{\link{predict.cclcda}}, \code{\link{cclcda2}}, \code{\link{predict.cclcda2}}, \code{\link[poLCA]{poLCA}} }
 
 \examples{
 # response probabilites for class 1

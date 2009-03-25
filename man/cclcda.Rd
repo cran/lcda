@@ -35,7 +35,7 @@ cclcda(x, ...)
 The \code{cclcda}-function performs a Common Components Latent Class Discriminant Analysis (CCLCDA). The model to estimate is
 \deqn{f(x) = \sum_{m=1}^{M} w_{m} \prod_{d=1}^D\prod_{r=1}^{R_d} \theta_{mdr}^{x_{dr}},}{f(x) = Sum_{m=1,..,M} w_{m} Prod_{d=1,...,D} Prod_{r=1,...,R_d} theta_{mdr}^{x_{dr}},}
 where \eqn{m}{m} is the latent subclass index, \eqn{d}{d} is the variable index and \eqn{r}{r} is the observation index. The variable \eqn{x_{dr}}{x_{dr}} is \eqn{1}{1} if the variable \eqn{d}{d} of this observation is \eqn{r}{r}.
-This common Latent Class Modell will be estimated for all classes by the \code{poLCA}-function (see \code{\link[pcg:poLCA]{poLCA}}) and class conditional mixing proportions \eqn{w_{mk}}{w_{mk}} are computed afterwards. These weights are computed by
+This common Latent Class Modell will be estimated for all classes by the \code{poLCA}-function (see \code{\link[poLCA]{poLCA}}) and class conditional mixing proportions \eqn{w_{mk}}{w_{mk}} are computed afterwards. These weights are computed by
 \deqn{\frac{1}{N_k} \sum_{n=1}^{N_k}\hat{P}(m, k|X=x_n),}{1/N_k Sum_{n=1,...,N_k} P(m, k|X=x_n),}
 where \eqn{k}{k} is the class index and \eqn{N_k}{N_k} the number of observations in class \eqn{k}{k}.
 
@@ -63,7 +63,7 @@ A list of class \code{cclcda} containing the following components:
 \item{chi.stat}{Value of the Chi-square test statistik of the test  of latent class membership and class membership as described below.}
 \item{chi.p}{P Value of the Chi-square of the test  of latent class membership and class membership as described below.}
 }
-\note{If the number of latent classes per class is unknown a model selection must be accomplished to determine the value of \code{m}. For this goal there are some model selection criteria implemented. The AIC, BIC, likelihood ratio statistic and the Chi-square goodness of fit statistic are taken from the poLCA-function (see \code{\link[pkg:poLCA]{poLCA}}).
+\note{If the number of latent classes per class is unknown a model selection must be accomplished to determine the value of \code{m}. For this goal there are some model selection criteria implemented. The AIC, BIC, likelihood ratio statistic and the Chi-square goodness of fit statistic are taken from the poLCA-function (see \code{\link[poLCA]{poLCA}}).
 
 Additionally \code{cclcda} provides quality criteria which should give insight into the model's classification potential. These criteria are similar to the splitting criteria of classification trees. The impurity measures are
 
@@ -76,7 +76,7 @@ Additionally \code{cclcda} provides quality criteria which should give insight i
 -- Pearson's Chi-square test: A Pearson's Chi-square test is performed to test the independence of latent class membership and class membership.
 }
 \author{ Michael B\"ucker}
-\seealso{ \code{\link{predict.cclcda}}, \code{\link{lcda}}, \code{\link{predict.lcda}}, \code{\link{cclcda2}}, \code{\link{predict.cclcda2}}, \code{\link[pcg:poLCA]{poLCA}} }
+\seealso{ \code{\link{predict.cclcda}}, \code{\link{lcda}}, \code{\link{predict.lcda}}, \code{\link{cclcda2}}, \code{\link{predict.cclcda2}}, \code{\link[poLCA]{poLCA}} }
 \examples{
 # response probabilites
 probs1 <- list()

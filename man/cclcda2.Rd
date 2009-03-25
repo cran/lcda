@@ -63,7 +63,7 @@ A list of class \code{cclcda2} containing the following components:
 \item{chi.stat}{Value of the Chi-square test statistik of the test  of latent class membership and class membership as described below.}
 \item{chi.p}{P Value of the Chi-square of the test  of latent class membership and class membership as described below.}
 }
-\note{If the number of latent classes per class is unknown a model selection must be accomplished to determine the value of \code{m}. For this goal there are some model selection criteria implemented. The AIC, BIC, likelihood ratio statistic and the Chi-square goodness of fit statistic are taken from the poLCA-function (see \code{\link[pkg:poLCA]{poLCA}}).
+\note{If the number of latent classes per class is unknown a model selection must be accomplished to determine the value of \code{m}. For this goal there are some model selection criteria implemented. The AIC, BIC, likelihood ratio statistic and the Chi-square goodness of fit statistic are taken from the poLCA-function (see \code{\link[poLCA]{poLCA}}).
 
 Additionally \code{cclcda2} provides quality criteria which should give insight into the model's classification potential. These criteria are similar to the splitting criteria of classification trees. The impurity measures are
 
@@ -76,7 +76,7 @@ Additionally \code{cclcda2} provides quality criteria which should give insight 
 -- Pearson's Chi-square test: A Pearson's Chi-square test is performed to test the independence of latent class membership and class membership.
 }
 \author{ Michael B\"ucker}
-\seealso{ \code{\link{predict.cclcda2}}, \code{\link{lcda}}, \code{\link{predict.lcda}}, \code{\link{cclcda}}, \code{\link{predict.cclcda}}, \code{\link[pcg:poLCA]{poLCA}} }
+\seealso{ \code{\link{predict.cclcda2}}, \code{\link{lcda}}, \code{\link{predict.lcda}}, \code{\link{cclcda}}, \code{\link{predict.cclcda}}, \code{\link[poLCA]{poLCA}} }
 \examples{
 # response probabilites
 probs1 <- list()
