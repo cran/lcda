@@ -102,7 +102,7 @@ wkm <- apply(wmk*prior, 2, function(x) x/sum(x))
 # generation of training data
 data_temp <- poLCA.simdata(N = 1000, probs = probs1,
                            nclass = 2, ndv = 4, nresp = 4,
-                           classdist=rep(0.25,4))
+                           P=rep(0.25,4))
 data <- data_temp$dat
 lclass <- data_temp$trueclass
 grouping <- numeric()
@@ -114,7 +114,7 @@ grouping[i] <- sample(c(1,2),1, prob=wkm[,lclass[i]])
 # generation of test data
 data_temp <- poLCA.simdata(N = 500, probs = probs1,
                            nclass = 2, ndv = 4, nresp = 4,
-                           classdist=rep(0.25,4))
+                           P=rep(0.25,4))
 data.test <- data_temp$dat
 lclass <- data_temp$trueclass
 grouping.test <- numeric()
