@@ -18,3 +18,5 @@ S3method(cclcda2, default)
 S3method(cclcda2, formula)
 S3method(predict, cclcda2)
 S3method(print, cclcda2)
+
+importFrom("stats", "as.formula", "chisq.test", "model.frame", "runif")
