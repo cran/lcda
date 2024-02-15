@@ -138,7 +138,7 @@ repeat{
   wmk.est <- matrix(0,nrow=k, ncol=m)
   for (i in 1:k)
   {
-  wmk.est[i,] <- 1/nk[i] * apply(tau.est[seq(i,m*k,k),grouping==i],1,sum)
+  wmk.est[i,] <- 1/nk[i] * apply(tau.est[seq(i,m*k,k),grouping==i,drop=FALSE],1,sum)
   }
 
   # estimation of theta

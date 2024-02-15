@@ -1,10 +1,10 @@
-e457450da94ec04f1800bbbc1f794a22 *DESCRIPTION
+abc2d323cbb058c28ae846ebf0878d9f *DESCRIPTION
 b2b31d94237d4d27cee7d08b55c8d61f *NAMESPACE
 2c3ee30e6f039781d41e07befb2ee196 *R/cclcda.R
 984baef5c464fdfdb603eeaa68cb8f5b *R/cclcda.default.R
 d44771a3695e339787588910d17f1eab *R/cclcda.formula.R
 334ee6398b0dce13728e8794cfbd80cf *R/cclcda2.R
-7272a076a6b55fc8c74fb9443ac4faab *R/cclcda2.default.R
+d74768e5610085c237186329640c5820 *R/cclcda2.default.R
 b4ae78d5f1fc03fd62ec26026b6f0718 *R/cclcda2.formula.R
 48f4832a048810c0afac3053acefef79 *R/entropy.R
 09a177eaaabe8c3d516e8506682e37a6 *R/lcda.R
